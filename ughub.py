@@ -94,7 +94,8 @@ def GenerateDefaultSourceFile(path=None):
 	targetPath = GetUGHubDirectory(path)
 
 	sources = 	[{	"name": "github-ug4",
-					"url": "https://github.com/UG4/ug4-packages.git",
+					#"url": "https://github.com/UG4/ug4-packages.git",
+					"url": "git@github.com:UG4/ug4-packages.git",  # 修改为SSH连接, 否则proxy出错
 					"branch": "master"}]
 
 	WriteSources(sources, targetPath)
